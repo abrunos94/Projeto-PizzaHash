@@ -98,11 +98,36 @@ section {
 .header .navbar {
   margin: 0 1rem;
   font-size: 1.9rem;
-  color: #fff;
+  color: white;
+  text-decoration: none;
 }
 
 .header .navbar a:hover {
   color: var(--main-color);
   border-bottom: 0.1rem solid var(--main-color);
   padding-bottom: 0.5rem;
+}
+
+nav a:visited {
+  color: white;
+}
+.header .icons {
+  display: flex;
+  align-items: center;
+}
+
+.header .icons div {
+  margin-left: 2rem;
+}
+.header .icons div ion-icon {
+  color: #fff;
+  cursor: pointer;
+  font-size: 2.5rem;
+}
+.header .icons div ion-icon:hover {
+  color: var(--main-color);
+}
+
+#menu-btn {
+  display: none;
 }
