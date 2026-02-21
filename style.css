@@ -32,11 +32,11 @@ html ::-webkit-scrollbar {
 }
 
 html ::-webkit-scrollbar-track {
-    background: transparent;
+    background:transparent;
 }
 
 html::-webkit-scrollbar-thumb{
-    background: #fff;
+    background: #222;
     border-radius: 5rem;
 }
 
