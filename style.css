@@ -251,12 +251,13 @@ nav a:visited {
 }
 
 .menu .box-container .box:hover {
- background: #fff;
+  background: #fff;
 }
 
 .menu .box-container .box:hover > * {
   color: black;
 }
+
 /* PRODUCTS / PROMOÇÕES */
 
 .products .box-container {
@@ -286,7 +287,7 @@ nav a:visited {
 }
 
 .products .box-container .box .image {
-  padding: 2.5rem 0;  
+  padding: 2.5rem 0;
 }
 
 .products .box-container .box .image img {
@@ -299,7 +300,7 @@ nav a:visited {
 }
 
 .products .box-container .box .content .stars {
-  padding:  1.5rem;
+  padding: 1.5rem;
 }
 
 .products .box-container .box .content .stars i {
@@ -317,7 +318,6 @@ nav a:visited {
   font-size: 1.5rem;
   text-transform: lowercase;
 }
-
 
 /* REVIEW / AVALIAÇÕES */
 .review .box-container {
@@ -491,3 +491,67 @@ nav a:visited {
     font-size: 1.5rem;
   }
 }
+
+/* media queries - Responsividade */
+/*@media (condição) {
+  Estilos que serão aplicados se a condição for verdadeira
+}*/
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 1.5rem 2rem;
+  }
+
+  section {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background: #fff;
+    width: 30rem;
+    height: calc(100vh - 9.5rem);
+  }
+
+  .header .navbar a {
+    color: var(--bg-card);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .home {
+    background-position: left;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .home .content h3 {
+    font-size: 4.5rem;
+  }
+
+  .home .content p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+
